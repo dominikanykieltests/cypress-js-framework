@@ -1,0 +1,14 @@
+{
+  "name": "cypress-js-framework",
+  "version": "1.0.0",
+  "description": "Personal portfolio with Cypress testing framework.",
+  "author": "Dominika Nykiel",
+  "license": "MIT",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "14.5.4"
+  }
+}
