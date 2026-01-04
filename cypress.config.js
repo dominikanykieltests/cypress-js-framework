@@ -1,3 +1,5 @@
+require('dotenv').config({ path: 'cypress/env/local.env' });
+
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
@@ -14,7 +16,9 @@ module.exports = defineConfig({
   },
   e2e: {
     testIsolation: true,
-    baseUrl: process.env.BASE_URL,
+    env: {
+      baseUrl: process.env.BASE_URL,
+    },
     setupNodeEvents(on, config) {},
     specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx,feature}',
   },
