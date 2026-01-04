@@ -3,7 +3,7 @@ import { ArticlesPage } from '../pages/articles-page-actions';
 const articlesPage = new ArticlesPage();
 
 describe('Articles section', () => {
-  let title = 'The principles of agile software development';
+  const title = 'The principles of agile software development';
   let articleId;
   let articleContent;
 
